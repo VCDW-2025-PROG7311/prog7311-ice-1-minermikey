@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<h2>✅ Order Confirmed</h2>
+
+<p>Thank you for your order!</p>
+
+<p><strong>Order ID:</strong> @ViewData["OrderId"]</p>
+<p><strong>Product Name:</strong> @ViewData["ProductName"]</p>
+<p><strong>Quantity:</strong> @ViewData["Quantity"]</p>
+
+<a asp-action="PlaceOrder">🔄 Place Another Order</a>
